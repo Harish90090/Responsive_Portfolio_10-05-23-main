@@ -1,0 +1,129 @@
+/* General Reset */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* Container */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Header Section */
+
+.intro {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    color: #333;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.intro p {
+    color: #555;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+
+/* Highlight Effect */
+
+.highlight {
+    color: #007bff;
+}
+
+
+/* About Section */
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.about-image img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.about-info {
+    flex: 1;
+    animation: slideIn 2s ease-in-out;
+}
+
+.about-info h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.about-info p {
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Animations */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

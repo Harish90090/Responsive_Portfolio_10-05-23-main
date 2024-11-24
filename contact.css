@@ -1,0 +1,133 @@
+/* General Reset */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #007bff, #6a11cb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* Contact Container */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+
+/* Contact Card */
+
+.contact-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: zoomIn 1.2s ease-in-out;
+    width: 320px;
+    transition: transform 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+}
+
+
+/* Contact Card Text */
+
+.contact-card h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.contact-card p {
+    color: #555;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.contact-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* Social Icons */
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Contact Button */
+
+.contact-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+/* Animations */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

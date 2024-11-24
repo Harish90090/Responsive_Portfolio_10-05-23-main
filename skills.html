@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Skill-Sets</title>
+    <style>
+        /* General Styles */
+        
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #a855f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            color: #ffffff;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        /* Card Container */
+        
+        .skills-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        /* Card Styles */
+        
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+        
+        .card:nth-child(1) {
+            animation-delay: 0.3s;
+        }
+        
+        .card:nth-child(2) {
+            animation-delay: 0.6s;
+        }
+        
+        .card:nth-child(3) {
+            animation-delay: 0.9s;
+        }
+        
+        .card h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 10px;
+            color: #fff;
+        }
+        /* Skills and Progress Bars */
+        
+        .skill {
+            margin-bottom: 20px;
+        }
+        
+        .skill-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #f1f1f1;
+        }
+        
+        .progress-bar {
+            position: relative;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .progress-bar div {
+            height: 100%;
+            width: 0;
+            background: linear-gradient(90deg, #4caf50, #81c784);
+            animation: fillBar 2s ease-out forwards;
+        }
+        /* Animations */
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fillBar {
+            to {
+                width: var(--progress);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Skill-Sets</h1>
+    <div class="skills-container">
+        <!-- Card 1: Data Structure and Algorithm -->
+        <div class="card">
+            <h2>Data Structure and Algorithm</h2>
+            <div class="skill">
+                <div class="skill-label">
+                    <span>Python</span>
+                    <span>70%</span>
+                </div>
+                <div class="progress-bar" style="--progress: 70%">
+                    <div></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-label">
+                    <span>C Language</span>
+                    <span>80%</span>
+                </div>
+                <div class="progress-bar" style="--progress: 80%">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Development Skills -->
+        <div class="card">
+            <h2>Development Skills</h2>
+            <div class="skill">
+                <div class="skill-label">
+                    <span>HTML</span>
+                    <span>90%</span>
+                </div>
+                <div class="progress-bar" style="--progress: 90%">
+                    <div></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-label">
+                    <span>CSS</span>
+                    <span>80%</span>
+                </div>
+                <div class="progress-bar" style="--progress: 80%">
+                    <div></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-label">
+                    <span>JavaScript</span>
+                    <span>60%</span>
+                </div>
+                <div class="progress-bar" style="--progress: 60%">
+                    <div></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-label">
+                    <span>React JS</span>
+                    <span>50%</span>
+                </div>
+                <div class="progress-bar" style="--progress: 50%">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: Artificial Intelligence -->
+        <div class="card">
+            <h2>Artificial Intelligence</h2>
+            <div class="skill">
+                <div class="skill-label">
+                    <span>Python in AI</span>
+                    <span>70%</span>
+                </div>
+                <div class="progress-bar" style="--progress: 70%">
+                    <div></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-label">
+                    <span>Machine Learning</span>
+                    <span>50%</span>
+                </div>
+                <div class="progress-bar" style="--progress: 50%">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
